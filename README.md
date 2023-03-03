@@ -1,1 +1,1 @@
-# Trival-Wars-Collect
+# Tribal-Wars-Collect
