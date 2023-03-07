@@ -745,8 +745,7 @@ export default {
 
 <style>
     /* Import Fonts*/
-    @import url("https://db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT");
-
+    @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
     body {
       background-attachment: fixed;
       background-color: #d2c09e;
@@ -784,7 +783,7 @@ export default {
     }
 
     .contact {
-      font-family: 'Old English Text MT';
+      font-family: 'MedievalSharp', cursive;
       font-size: 125%;
       text-align: center;
       display: flex;
@@ -803,7 +802,7 @@ export default {
     }
 
     .title {
-        font-family: 'Old English Text MT';
+        font-family: 'MedievalSharp', cursive;
         font-size: 125%;
         text-align: center;
         margin-bottom: 5vh;
