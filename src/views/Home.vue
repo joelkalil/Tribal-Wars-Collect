@@ -745,7 +745,7 @@ export default {
 
 <style>
     /* Import Fonts*/
-    @import url(//db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT);
+    @import url("https://db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT");
 
     body {
       background-attachment: fixed;
