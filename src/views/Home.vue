@@ -542,6 +542,7 @@
 export default {
     data() {
         return{
+          // Variable to receive the quantity of each troop.
           resources: {
               spear: 0,
               sword: 0,
@@ -552,18 +553,23 @@ export default {
               heavy: 0,
               knight: 0,
           },
+          // Variable to receive the value of the checkbox.
           collect: {
             low: true,
             medium: true,
             high: true,
             extreme: true,  
           },
+          // Variable with the factor/proportion between each collect.
           collect_factor: {
             low: 15,
             medium: 6,
             high: 3,
             extreme: 2,
           },
+          // Variable to receive the total factor.
+          total_factor: 0,
+          // Variable to stock the quantity of each troop.
           troops:{
             low: {
               spear: 0,
@@ -606,14 +612,16 @@ export default {
               knight: 0,
             },
           },
-          total_factor: 0,
+          // Variable to receive the capacity calculated.
           capacity: 0,
+          // Variable to stock the capacity of each collect.
           capacity_collect: {
             low: 0,
             medium: 0,
             high: 0,
             extreme: 0,
           },
+          // Variables to receive the total quantity of each material farmed.
           wood: 0,
           stone: 0,
           iron: 0,
@@ -773,7 +781,7 @@ export default {
       appearance: auto;
       border: none;
       padding: none;
-      height: 2vh;
+      height: 3.5vh;
       overflow: hidden;
     }
 
@@ -825,8 +833,8 @@ export default {
         width: 10vw;
         min-height: 5vh;
         min-width: 10vw;
-        padding: 4px 8px;
-        margin: 4px;
+        padding: 0.5vh 1vh;
+        margin: 0.5vh;
         -webkit-box-align: center;
         align-items: center;
         background-color: #c1a264 !important;
@@ -847,8 +855,8 @@ export default {
         width: auto;
         min-height: 5vh;
         min-width: 10vw;
-        padding: 4px 8px;
-        margin: 25px;
+        padding: 0.5vh 1vw;
+        margin: 2.5vh;
         align-items: center;
         background-color: #c1a264 !important;
         border-radius: 0.8rem;
@@ -861,6 +869,53 @@ export default {
       flex-direction: row;
       align-items: center;
       margin: 0.5vh;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Making it responsive for others screens */
+    /* ------------------------------------------------------------------ */
+    /* 
+        Media Query for Mobile Devices 
+    */
+    @media (max-width: 480px)  {
+
+      input {
+        height: 3.5vh;
+      }
+      
+      .title {
+        font-size: 80%;
+        margin-bottom: 4vh;
+      }
+
+      .troops, .resources, .collect {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .troops-square, .resources-square{
+        display: flex;
+        flex-direction: row;
+        height: 8vh;
+        width: 50vw;
+        min-height: 5vh;
+        min-width: 10vw;
+        padding: 0.5vh 1vw;
+        margin: 2.5vh;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: #c1a264 !important;
+        border-radius: 0.8rem;
+        border: 0.2vh solid #a37923;
+        box-shadow: 1vh 1vh 2vh rgba(0,0,0,.5);
+      }
     }
 
 </style>
