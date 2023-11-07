@@ -2,6 +2,8 @@
 
 ## Introduction
 
+You can check the app [there](https://tribal-wars-collect.vercel.app/).
+
 This project consists in a calculator to optimize the collect in Tribal Wars. But how exactly it works? It's simple, the objective is to reach the higher value of farm/minute, and to calculate it, I had to considered multiples scenarios, but in the most part, the base approach was to consider equal time.
 
 In Tribal Wars, we have 4 collect options, where the resource collect is proportional to the capacity of each ensemble of troops:
